@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<meta charset="UTF-8">
+
+<head>
+        <title>My House</title>
+        <style type="text/css">
+
+                body {
+                        height: 100vh;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                }
+
+                .container {
+                        width: 500px;
+                        background: #f4f4ff;
+
+                }
+
+                .div1{
+                        width: 250px;
+                        height: 100px;
+                        /* background: #e5e5e5; */
+                        background: linear-gradient(black,silver);
+                        box-shadow: -5px 0 10px rgba(0, 0, 0, 1);
+                        border: 1px solid black;
+
+                        padding: 10px;
+                        margin: auto;
+                        position: relative;
+                        perspective: 800px;
+                        perspective-origin: top;
+
+
+                }
+
+                .div2{
+                        width: 200px;
+                        height: 80px;
+                        background:linear-gradient(orange,red);
+                        box-shadow: -5px 0 10px rgba(0.5, 0, 0, 0.5);
+
+                        border: 1px solid #efefef;
+
+
+                        transform: rotateX(45deg);
+                        padding: 50px;
+                        position: absolute;
+                        left: -15px;
+                        top: -100%;
+
+                        z-index: 3;
+
+
+                       
+                }
+
+                .div3 {
+                        width: 50px;
+                        height: 95px;
+                        background: linear-gradient(brown 80%,silver 20%);
+                        border: 1px solid #efefef;
+                        box-shadow: -5px 0 12px brown;
+
+
+                        transform: rotateY(-45deg);
+                        transform-origin: right;
+
+                        position: absolute;
+                        right: 84px;
+                        top: 22px;
+
+                        transition: all 0.5s;
+
+                        z-index: 2;
+                
+                }
+
+                .div3:hover {
+                        /* transform-origin: right; */
+                        transform: rotateY(0.5deg);
+                }
+
+                .div4 {
+                        width: 50px;
+                        height: 95px;
+                        background: linear-gradient(brown 80%,silver 20%);
+                        border: 1px solid #efefef;
+                        box-shadow: 5px 0 12px brown;
+
+
+                        transform: rotateY(0deg);
+                        transform-origin: left;
+
+                        position: absolute;
+                        left: 84px;
+                        top: 22px;
+
+                        transition: all 0.5s;
+
+                        z-index: 1;
+
+                       
+                }
+
+                .div4:hover {
+                        /* transform-origin: right; */
+                        transform: rotateY(-20deg);
+                }
+
+                
+        </style>
+</head>
+
+<body>
+
+        <div class="container">
+                <div class="div1">DIV 1
+                        <div class="div2">DIV 2</div>
+                        <div class="div3">DIV 3</div>
+                        <div class="div4">DIV 4</div>
+                        <!-- <div class="div5">DIV 5</div> -->
+
+
+                </div>
+        </div>
+
+</body>       
+
+</html>
